@@ -144,3 +144,122 @@ header {
     text-transform: uppercase;
     text-align: center;
 }
+
+.productContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.product-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0.8rem 0 0.5rem;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.add-to-cart {
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 0.6rem;
+    cursor: pointer;
+}
+
+.cart-container {
+    margin-top: 3rem !important;
+}
+
+.back-homepage {
+    display: flex;
+    align-items: center;
+}
+
+.back-homepage .bx {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.back-homepage span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.cart-s-title {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 1rem;
+}
+
+#cartItems {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+    align-items: center;
+    border-bottom: 1px solid #f2f0f1;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cart-item-title {
+    font-size: 1.3rem;
+}
+
+.cart-item-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.8rem;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.cart-item-price {
+    font-size: 1.3rem;
+}
+
+.remove-from-cart {
+    max-width: 80px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: red;
+    color: var(--bg-color);
+    padding: 8px;
+}
